@@ -360,6 +360,10 @@
 					<string>#krpanoElementProperties</string>
 				</dict>
 				<dict>
+					<key>include</key>
+					<string>#comments</string>
+				</dict>
+				<dict>
 					<key>captures</key>
 					<dict>
 						<key>1</key>

@@ -104,6 +104,7 @@ repository:
     - {include: '#handlerString'}
     - {include: '#krpanoElement'}
     - {include: '#krpanoElementProperties'}
+    - {include: '#comments'}
     - captures:
         '1': {name: entity.other.attribute-name.localname.xml}
       match: ([-_a-zA-Z0-9]+)=
