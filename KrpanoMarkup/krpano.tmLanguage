@@ -76,7 +76,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>]]&gt;</string>
+			<string>\]\]&gt;</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>0</key>
@@ -143,13 +143,6 @@
 	</array>
 	<key>repository</key>
 	<dict>
-		<key>bare-ampersand</key>
-		<dict>
-			<key>match</key>
-			<string>&amp;</string>
-			<key>name</key>
-			<string>invalid.illegal.bad-ampersand.xml</string>
-		</dict>
 		<key>comments</key>
 		<dict>
 			<key>begin</key>
@@ -165,13 +158,6 @@
 			<string>\".*?\"</string>
 			<key>name</key>
 			<string>string.quoted.double.xml</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#bare-ampersand</string>
-				</dict>
-			</array>
 		</dict>
 		<key>handlerString</key>
 		<dict>
@@ -327,13 +313,6 @@
 			<string>\'</string>
 			<key>name</key>
 			<string>string.quoted.single.xml</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#bare-ampersand</string>
-				</dict>
-			</array>
 		</dict>
 		<key>tagStuff</key>
 		<dict>
