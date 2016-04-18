@@ -15,7 +15,7 @@ Package inclides
 
 ## Installation ##
 
-1. Clone or download this repo into ST User packages folder (Packages -> Browse Packages, then enter User folder);
+1. Clone or download this repo to some location, then copy contents of `dist` folder into ST User packages folder (Packages -> Browse Packages, then enter User folder);
 2. Restart ST if required.
 
 ## Features ##
@@ -23,7 +23,7 @@ Package inclides
 **I.**	Syntax definition is based on [official krpano documentation](http://krpano.com/docu), [plugin](http://krpano.com/plugins/) docs and is intended to recognize all structural entities(e.g. elements, properties or keywords) of KML.
 
 Current list of recognized entities includes:
-* Operators (( ) [ ] . , ; == === != !== < > <= >= ! AND OR LT GT LE GE). Each operator used in code must be separated from operands by spaces;
+* Operators (`( ) [ ] . , ; == === != !== < > <= >= ! AND OR LT GT LE GE`). Each operator used in code must be separated from operands by spaces;
 * Instruction words (see [Programming logic/Flow control](http://krpano.com/docu/actions/#actionsreference) section of krpano docs);
 * Basic functions (all other pre-defined functions);
 * [Global Variables](http://krpano.com/docu/actions/#globalvarsreference);
