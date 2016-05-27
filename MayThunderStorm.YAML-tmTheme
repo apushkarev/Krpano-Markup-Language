@@ -58,7 +58,7 @@ settings:
   settings: {fontStyle: underline, foreground: '#bae368'}
 - name: Inherited class
   scope: entity.other.inherited-class
-  settings: {fontStyle: italic underline, foreground: '#bae368'}
+  settings: {fontStyle: bold, foreground: '#e3c068'}
 - name: Function name
   scope: entity.name.function, entity.name.method
   settings: {fontStyle: '', foreground: '#bae368'}
