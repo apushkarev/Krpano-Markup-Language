@@ -27,7 +27,7 @@ Package inclides
 **I.**	Syntax definition is based on [official krpano documentation](http://krpano.com/docu), [plugin](http://krpano.com/plugins/) docs and is intended to recognize all structural entities(e.g. elements, properties or keywords) of KML.
 
 Current list of recognized entities includes:
-* Operators (`( ) [ ] . , ; == === != !== < > <= >= ! AND OR LT GT LE GE`). Each operator used in code must be separated from operands by spaces;
+* Operators (`( ) [ ] . , ; == === != !== < > <= >= ! AND OR LT GT LE GE + - / * ^ <<(or LSHT) >>(or RSHT) `). Each operator used in code must be separated from operands by spaces;
 * Instruction words (see [Programming logic/Flow control](http://krpano.com/docu/actions/#actionsreference) section of krpano docs);
 * Basic functions (all other pre-defined functions);
 * [Global Variables](http://krpano.com/docu/actions/#globalvarsreference);
@@ -43,7 +43,7 @@ Current list of recognized entities includes:
 
 **1. Since comments are not supported niether in actions nor in event handlers they should be removed from source code before execution.**
 
-**II.**	May Thunderstorm is user-defined color theme for ST3 based on [Seti Monokai dark color scheme](https://github.com/jesseweed/seti-ui) so it supports any other language. Syntax definition also works nicely with Twilight theme. Unfortunately, Monokai would not be supported.
+**II.**	May Thunderstorm is user-defined color theme for ST3 based on [Seti Monokai dark color scheme](https://github.com/jesseweed/seti-ui) so it supports any other language. Syntax definition also works nicely with Twilight theme. Monokai extension in plans!
 
 **III.**	removeComments.py script removes single-line comments from KML source. This operation is required for correct code exec.
 

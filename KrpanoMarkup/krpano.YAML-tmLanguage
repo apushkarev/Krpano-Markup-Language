@@ -104,7 +104,7 @@ repository:
 
 # Operators
   krpanoOperators:
-    match: (\(|\)|\[|\]|\.|;|,|\s(==(=)?|!=(=)?|<(<)?|>(>)?|<=|>=|!|\+|\-|\*|\/|\^|\?|:|(B)?AND|(B)?OR|LT|GT|LE|GE)\s)
+    match: (\(|\)|\[|\]|\.(\.\.)?|;|,|\s(==(=)?|!=(=)?|<(<)?|>(>)?|<=|>=|!|\+|\-|\*|\/|\^|\?|:|(B)?AND|(B)?OR|LT|GT|LE|GE|(L|R){1}SHT)\s)
     name: keyword.operator
 
 # Instruction words

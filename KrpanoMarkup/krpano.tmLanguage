@@ -273,7 +273,7 @@
 		<key>krpanoOperators</key>
 		<dict>
 			<key>match</key>
-			<string>(\(|\)|\[|\]|\.|;|,|\s(==(=)?|!=(=)?|&lt;(&lt;)?|&gt;(&gt;)?|&lt;=|&gt;=|!|\+|\-|\*|\/|\^|\?|:|(B)?AND|(B)?OR|LT|GT|LE|GE)\s)</string>
+			<string>(\(|\)|\[|\]|\.(\.\.)?|;|,|\s(==(=)?|!=(=)?|&lt;(&lt;)?|&gt;(&gt;)?|&lt;=|&gt;=|!|\+|\-|\*|\/|\^|\?|:|(B)?AND|(B)?OR|LT|GT|LE|GE|(L|R){1}SHT)\s)</string>
 			<key>name</key>
 			<string>keyword.operator</string>
 		</dict>
