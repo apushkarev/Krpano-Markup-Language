@@ -11,6 +11,7 @@ Package inclides
 
 * Installation
 * Features
+* Code formatting recomendations
 * Modifying
 
 ## Installation ##
@@ -53,6 +54,55 @@ At one call comments from one file are removed.
 
 Usage:
 	`python script_dir/remove_comments.py src_dir src_file output_dir1 output_dir2`
+
+## Code formatting recomendations ##
+
+#### String recognition.
+
+It happened that strings in double quotation marks (`""`) in KML are used for two purposes:
+* as a string in XML attribute values for numbers, booleans and strings;
+* as a code inside a string value.
+
+This syntax highlighting recognizes difference between the two by code formatting. String value shold not have next line symbol (`\n`) right after opening quotation mark:
+
+	attribute="value" would be recognized as string and highlighted as a string entirely;
+
+    attribute = "
+	    some_code();
+    "
+
+would be recognized as a piece of script.
+
+Strings inside single quotation marks are always recognized as string values.
+
+#### Code blocks separation.
+
+KML does not have any specific separation symbols which would clearly show nesting of code blocks like curly brackets `{}` in C or JavaScript.
+
+Such complicated cunstructions as `if` condition or loops, or delayedcalls or tweens are just functions that take values and blocks of code as arguments.
+
+So the only way to divide blocks of code are demonstrative indentations which coder put into code.
+
+For example,
+
+    if (condition,
+    	actions;
+    ,
+    	else actions;
+    );
+
+would be a nice and correct way to format condition statement.
+For loops it might look like
+
+    for (set(i, 0), i LT some_array.count, inc(i),
+    	actions;
+    );
+
+As one can see comma is playing role of opening curly bracket and closing bracket with semicolon plays role of closing curly bracket.
+
+This is the basic principle of KML code intendation: if you want to put some code into function arguments you write comma and then go to next line with one more tab. If you have finished with block of code, you go to next line. Then you go one tab back to the left and then put `);`  closing the function call.
+
+This simple rule would make your code much easier to read and review. It also is used on screenshot above.
 
 ## Modifying ##
  
