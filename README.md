@@ -57,15 +57,15 @@ Usage:
 
 ## Code formatting recomendations ##
 
-#### String recognition.
+### String recognition.
 
 It happened that strings in double quotation marks (`""`) in KML are used for two purposes:
 * as a string in XML attribute values for numbers, booleans and strings;
 * as a code inside a string value.
 
-This syntax highlighting recognizes difference between the two by code formatting. String value shold not have next line symbol (`\n`) right after opening quotation mark:
+This syntax highlighting recognizes difference between the two by code formatting. String value should not have next line symbol (`\n`) right after opening quotation mark:
 
-	attribute="value" would be recognized as string and highlighted as a string entirely;
+`attribute="value"` would be recognized as string and highlighted as a string entirely;
 
     attribute = "
 	    some_code();
@@ -75,7 +75,7 @@ would be recognized as a piece of script.
 
 Strings inside single quotation marks are always recognized as string values.
 
-#### Code blocks separation.
+### Code blocks separation.
 
 KML does not have any specific separation symbols which would clearly show nesting of code blocks like curly brackets `{}` in C or JavaScript.
 
