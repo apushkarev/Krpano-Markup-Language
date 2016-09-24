@@ -28,7 +28,7 @@ Package inclides
 **I.**	Syntax definition is based on [official krpano documentation](http://krpano.com/docu), [plugin](http://krpano.com/plugins/) docs and is intended to recognize all structural entities(e.g. elements, properties or keywords) of KML.
 
 Current list of recognized entities includes:
-* Operators (`( ) [ ] . , ; == === != !== < > <= >= ! &&(or AND) ||(or 'OR') LT GT LE GE + - / * ^ <<(or LSHT) >>(or RSHT) `). Each operator used in code must be separated from operands by spaces;
+* Script perators (`( ) [ ] . , ; == === != !== < > <= >= ! &&(or AND) ||(or 'OR') LT GT LE GE + - / * ^ <<(or LSHT) >>(or RSHT) `). All operators except brackets, dot and comma and semicolon used in code must be separated from operands by spaces;
 * Instruction words (see [Programming logic/Flow control](http://krpano.com/docu/actions/#actionsreference) section of krpano docs);
 * Basic functions (all other pre-defined functions);
 * [Global Variables](http://krpano.com/docu/actions/#globalvarsreference);
@@ -67,7 +67,7 @@ This syntax highlighting recognizes difference between the two by code formattin
 
 `attribute="value"` would be recognized as string and highlighted as a string entirely;
 
-    attribute = "
+    attribute="
 	    some_code();
     "
 
