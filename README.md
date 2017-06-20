@@ -42,7 +42,8 @@ Current list of recognized entities includes:
 * Single-line comments(following // until the end of the line**(1)**);
 * XML tags.
 
-**1. Since comments are not supported niether in actions nor in event handlers they should be removed from source code before execution.**
+**1. Single line C-styled comments are not supported niether in actions nor in event handlers. They should be removed from source code before execution.**
+You can put XML-styled comments where it's possible by XML rules.
 
 **II.**	May Thunderstorm is user-defined color theme for ST3 based on [Seti Monokai dark color scheme](https://github.com/jesseweed/seti-ui) so it supports any other language. Syntax definition also works nicely with Twilight theme. Monokai extension in plans!
 
