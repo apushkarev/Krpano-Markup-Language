@@ -132,7 +132,7 @@ repository:
 
 # Pre-defined elements
   krpanoElement:
-    match: \b(krpano|include|preview|image|view|area|display|control|cursors|autorotate|plugin|layer|hotspot|style|events|action|contextmenu|item|progress|network|memory|security|crossdomainxml|allowdomain|textstyle|lensflare(set)??|flare|data|scene|sound|spot(style)?|radar|(position|maptype|zoom){1}control|encrypted|array_name|sphere|point)\b
+    match: \b(krpano|include|preview|image|view|area|display|control|cursors|autorotate|plugin|layer|hotspot|style|events|action|contextmenu|item|progress|network|memory|security|crossdomainxml|allowdomain|textstyle|lensflare(set)??|flare|data|scene|sound|spot(style)?|radar|(position|maptype|zoom){1}control|encrypted|array_name|sphere|point|webvr)\b
     name: entity.name.class
 
 # Pre-defined element properties
