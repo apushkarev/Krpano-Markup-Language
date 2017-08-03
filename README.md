@@ -45,7 +45,7 @@ Current list of recognized entities includes:
 **1. Single line C-styled comments are not supported niether in actions nor in event handlers. They should be removed from source code before execution.**
 You can put XML-styled comments where it's possible by XML rules.
 
-**II.**	May Thunderstorm is user-defined color theme for ST3 based on [Seti Monokai dark color scheme](https://github.com/jesseweed/seti-ui) so it supports any other language. Syntax definition also works nicely with Twilight theme. Monokai extension in plans!
+**II.**	May Thunderstorm is user-defined color theme for ST3 based on [Seti Monokai dark color scheme](https://github.com/jesseweed/seti-ui) so it supports any other language. Syntax definition also works nicely with Monokai and Twilight theme.
 
 **III.**	removeComments.py script removes single-line comments from KML source. This operation is required for correct code exec.
 
