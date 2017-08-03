@@ -1,0 +1,142 @@
+# [PackageDev] target_format: plist, ext: tmTheme
+author: Monokai
+colorSpaceName: sRGB
+settings:
+- settings: {accent: '#e4db73', activeGuide: '#53554c', background: '#272821', bracketContentsOptions: underline,
+    caret: '#fdfff1', findHighlight: '#e4db73', findHighlightForeground: '#272821',
+    foreground: '#fdfff13f', guide: '#393b33', gutterForeground: '#53554c', lineHighlight: '#fdfff10c',
+    popupCss: 'html { --background: #272821; --foreground: #fdfff1; --redish: #f82570;
+      --orangish: #fc961f; --yellowish: #e4db73; --greenish: #a6e12d; --bluish: #66d9ee;
+      --purplish: #ae81ff; --pinkish: #f82570; background-color: #393b33; color: #fdfff1;
+      } a { color: var(--yellowish); }', selection: '#393b33', selectionBorder: '#393b33',
+    shadow: '#00000000', shadowWidth: '0', stackGuide: '#393b33', tagsOptions: stippled_underline}
+- scope: keyword
+  settings: {foreground: '#f82570'}
+- scope: string
+  settings: {foreground: '#e4db73'}
+- scope: string constant
+  settings: {foreground: '#e35b62'}
+- scope: constant.numeric
+  settings: {foreground: '#ae81ff'}
+- scope: constant.language, variable.other.constant
+  settings: {foreground: '#ae81ff'}
+- scope: constant.character, constant.other
+  settings: {foreground: '#ae81ff'}
+- scope: variable
+  settings: {fontStyle: ''}
+- scope: keyword
+  settings: {foreground: '#f82570'}
+- scope: keyword.control
+  settings: {foreground: '#f82570'}
+- scope: storage
+  settings: {fontStyle: '', foreground: '#f82570'}
+- scope: keyword.other.substitution
+  settings: {foreground: '#8d8f85'}
+- scope: keyword.operator.krpano
+  settings: {fontStyle: bold, foreground: '#b3ad8f'}  
+- scope: storage.type
+  settings: {fontStyle: italic, foreground: '#66d9ee'}
+- scope: entity.name.class, entity.other.attribute-name.class
+  settings: {fontStyle: underline, foreground: '#a6e12d'}
+- scope: entity.name.type
+  settings: {fontStyle: underline, foreground: '#60bf30'}
+- scope: entity.other.attribute-name.id
+  settings: {foreground: '#fc961f'}
+- scope: entity.other.inherited-class
+  settings: {fontStyle: italic underline, foreground: '#a6e12d'}
+- scope: entity.name.function
+  settings: {fontStyle: '', foreground: '#a6e12d'}
+- scope: support.function
+  settings: {fontStyle: '', foreground: '#66d9ee'}
+- scope: variable.parameter, source.sass variable.other.value, meta.property-list.css
+    variable.other.value, source.scss variable, source.sass variable
+  settings: {fontStyle: italic, foreground: '#fc961f'}
+- scope: string.unquoted.label
+  settings: {fontStyle: '
+
+      ', foreground: '#e4db73'}
+- scope: entity.name.tag
+  settings: {fontStyle: '', foreground: '#f82570'}
+- scope: meta.attribute-with-value - string.quoted, entity.other.attribute-name.html
+  settings: {fontStyle: italic, foreground: '#a6e12d'}
+- scope: entity.other.attribute-name.event, entity.other.attribute-name.pseudo-class.css, support.type.property-name.css
+  settings: {fontStyle: italic, foreground: '#66d9ee'}
+- scope: meta.instance.constructor
+  settings: {fontStyle: '', foreground: '#66d9ee'}
+- scope: variable.other.class
+  settings: {fontStyle: '', foreground: '#66d9ee'}
+- scope: support.constant
+  settings: {fontStyle: '', foreground: '#66d9ee'}
+- scope: support.type - support.type.property-name, support.class
+  settings: {fontStyle: italic, foreground: '#66d9ee'}
+- scope: support.other.variable
+  settings: {fontStyle: ''}
+- scope: meta.brace.round.begin, meta.brace.round.end, meta.brace.square.begin, meta.brace.square.end,
+    meta.group.braces.round.function.arguments, meta.delimiter.comma,
+    punctuation.separator.key-value, punctuation.section.arguments.begin, punctuation.section.arguments.end,
+    meta.property-list.css, punctuation.section.group.begin, punctuation.section.group.end,
+    punctuation.definition.metadata,
+    punctuation.definition.constant, punctuation.definition.constant, punctuation.definition.italic,
+    punctuation.definition.bold
+  settings: {foreground: '#8d8f85'}
+- scope: punctuation.definition.tag
+  settings: {foreground: '#fdfff1'}
+- scope: comment
+  settings: {fontStyle: italic, foreground: '#686a61'}
+- scope: variable.language.this
+  settings: {foreground: '#bcbdb1'}
+- scope: meta.function-call variable.other
+  settings: {foreground: '#fdfff1'}
+- scope: meta.structure.dictionary.json string.quoted.double.json -meta.structure.dictionary.value.json
+  settings: {foreground: '#fdfff1'}
+- scope: text.find-in-files
+  settings: {foreground: '#fdfff1'}
+- scope: constant.numeric.line-number.match.find-in-files
+  settings: {foreground: '#e4db73'}
+- scope: constant.numeric.line-number.find-in-files
+  settings: {foreground: '#53554c'}
+- scope: source.json punctuation -comment
+  settings: {foreground: '#8d8f85'}
+- scope: meta.structure.dictionary.value
+  settings: {foreground: '#e4db73'}
+- scope: string.unquoted.label
+  settings: {foreground: '#fdfff1'}
+- scope: sublimelinter.mark.warning
+  settings: {foreground: '#fc961f'}
+- scope: sublimelinter.gutter-mark
+  settings: {foreground: '#ffffff'}
+- scope: sublimelinter.mark.error
+  settings: {foreground: '#f82570'}
+- scope: markup.ignored.git_gutter
+  settings: {foreground: '#8d8f85'}
+- scope: markup.untracked.git_gutter
+  settings: {foreground: '#ae81ff'}
+- scope: markup.inserted.git_gutter
+  settings: {foreground: '#a6e12d'}
+- scope: markup.changed.git_gutter
+  settings: {foreground: '#e4db73'}
+- scope: markup.deleted.git_gutter
+  settings: {foreground: '#f82570'}
+- scope: meta.diff, meta.diff.header
+  settings: {foreground: '#bcbdb1'}
+- scope: markup.deleted
+  settings: {foreground: '#f82570'}
+- scope: markup.inserted
+  settings: {foreground: '#a6e12d'}
+- scope: markup.changed
+  settings: {foreground: '#e4db73'}
+- scope: punctuation.section.embedded.begin, punctuation.section.embedded.end
+  settings: {foreground: '#fc961f'}
+- scope: markup.underline.link
+  settings: {fontStyle: underline, foreground: '#66d9ee'}
+- scope: markup.heading
+  settings: {foreground: '#e4db73'}
+- scope: markup.raw.inline, markup.raw.block
+  settings: {foreground: '#fc961f'}
+- scope: string.other.link.title, string.other.link.description
+  settings: {foreground: '#f82570'}
+- scope: meta.image.inline.markdown
+  settings: {foreground: '#f82570'}
+- scope: string.other.link.description.title
+  settings: {foreground: '#a6e12d'}
+uuid: f99fffd1-9f3d-5a50-bb0e-d21dd778e0e8
