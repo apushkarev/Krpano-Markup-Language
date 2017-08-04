@@ -47,6 +47,8 @@ You can put XML-styled comments where it's possible by XML rules.
 
 **II.**	May Thunderstorm is user-defined color theme for ST3 based on [Seti Monokai dark color scheme](https://github.com/jesseweed/seti-ui) so it supports any other language. Syntax definition also works nicely with Monokai and Twilight theme.
 
+Monokai support is based on [Sublime Monokai Extended by Jon Schlinkert](https://github.com/jonschlinkert/sublime-monokai-extended)
+
 **III.**	removeComments.py script removes single-line comments from KML source. This operation is required for correct code exec.
 
 Requires [python environment](https://www.python.org/downloads/windows/)
