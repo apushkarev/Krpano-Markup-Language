@@ -33,11 +33,11 @@
 				<key>background</key>
 				<string>#222222</string>
 				<key>bracketContentsForeground</key>
-				<string>#f8f8f2a5</string>
+				<string>#ccccc8a5</string>
 				<key>bracketContentsOptions</key>
 				<string>underline</string>
 				<key>bracketsForeground</key>
-				<string>#f8f8f2a5</string>
+				<string>#ccccc8a5</string>
 				<key>bracketsOptions</key>
 				<string>underline</string>
 				<key>caret</key>
@@ -47,7 +47,7 @@
 				<key>findHighlightForeground</key>
 				<string>#000000</string>
 				<key>foreground</key>
-				<string>#f8f8f2</string>
+				<string>#ccccc8</string>
 				<key>invisibles</key>
 				<string>#3b3a32</string>
 				<key>lineHighlight</key>
@@ -269,7 +269,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#fdfff1</string>
+				<string>#ccccc8</string>
 			</dict>
 		</dict>
 		<dict>

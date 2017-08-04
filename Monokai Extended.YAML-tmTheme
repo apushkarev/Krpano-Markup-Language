@@ -6,10 +6,10 @@ gutterSettings: {background: '#073642', divider: '#586e75', foreground: '#839496
 name: Monokai Extended
 semanticClass: theme.dark.monokai_extended
 settings:
-- settings: {activeGuide: '#9d550fb0', background: '#222222', bracketContentsForeground: '#f8f8f2a5',
-    bracketContentsOptions: underline, bracketsForeground: '#f8f8f2a5', bracketsOptions: underline,
+- settings: {activeGuide: '#9d550fb0', background: '#222222', bracketContentsForeground: '#ccccc8a5',
+    bracketContentsOptions: underline, bracketsForeground: '#ccccc8a5', bracketsOptions: underline,
     caret: '#f8f8f0', findHighlight: '#ffe792', findHighlightForeground: '#000000',
-    foreground: '#f8f8f2', invisibles: '#3b3a32', lineHighlight: '#333333', selection: '#444444',
+    foreground: '#ccccc8', invisibles: '#3b3a32', lineHighlight: '#333333', selection: '#444444',
     selectionBorder: '#1c1c1c', tagsOptions: stippled_underline}
 - name: Comment
   scope: comment
@@ -61,7 +61,7 @@ settings:
   settings: {fontStyle: '', foreground: '#f92672'}
 - name: Tag attribute
   scope: entity.other.attribute-name
-  settings: {fontStyle: '', foreground: '#fdfff1'}
+  settings: {fontStyle: '', foreground: '#ccccc8'}
 - name: Library function
   scope: support.function
   settings: {fontStyle: '', foreground: '#66d9ef'}
