@@ -61,7 +61,7 @@ settings:
   settings: {fontStyle: '', foreground: '#f92672'}
 - name: Tag attribute
   scope: entity.other.attribute-name
-  settings: {fontStyle: '', foreground: '#a6e22e'}
+  settings: {fontStyle: '', foreground: '#fdfff1'}
 - name: Library function
   scope: support.function
   settings: {fontStyle: '', foreground: '#66d9ef'}
