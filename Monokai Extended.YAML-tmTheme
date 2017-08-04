@@ -76,7 +76,7 @@ settings:
   settings: {fontStyle: ''}
 - name: String constant
   scope: string constant
-  settings: {foreground: '#66d9ef'}
+  settings: {foreground: '#e35b62'}
 - name: String.regexp
   scope: string.regexp
   settings: {foreground: '#f6aa11'}
