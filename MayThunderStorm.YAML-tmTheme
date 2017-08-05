@@ -1,8 +1,8 @@
 # [PackageDev] target_format: plist, ext: tmTheme
 name: May Thunderstorm Theme
 settings:
-- settings: {activeGuide: '#1b2735', background: '#242424', bracketContentsOptions: underline,
-    caret: '#ffe792', findHighlight: '#4FA5C7', foreground: '#d4d7d6', guide: '#71787c40',
+- settings: {activeGuide: '#1b2735', background: '#1d1d1d', bracketContentsOptions: underline,
+    caret: '#ffe792', findHighlight: '#4FA5C7', foreground: '#cfcfd4', guide: '#71787c40',
     gutter: '#0D1011', gutterForeground: '#d4d7d670', inactiveSelection: '#2F6277',
     invisibles: '#F3FFB51A', lineHighlight: '#101112', selection: '#4FA5C7', selectionForeground: '#fefefe',
     stackGuide: '#71787c66', tagsForeground: '#B6DFEB', tagsOptions: underline}
@@ -14,19 +14,19 @@ settings:
   settings: {foreground: '#475359'}
 - name: String
   scope: string
-  settings: {foreground: '#c2ed77'}
+  settings: {foreground: '#b5ed53'}
   scope: string.quoted.double, string.quoted.single.xml
-  settings: {foreground: '#74a9e3'}
+  settings: {foreground: '#4f97e3'}
 - name: Punctuation Definition
   scope: punctuation.definition.string.begin.xml, punctuation.definition.string.end.xml
-  settings: {fontStyle: bold, font-size: 1.2em, foreground: '#c2ed77'} 
+  settings: {fontStyle: bold, font-size: 1.2em, foreground: '#b5ed53'} 
 
 - name: String constant
   scope: string constant
-  settings: {fontStyle: bold, foreground: '#bf6b6f'}
+  settings: {fontStyle: bold, foreground: '#d9575d'}
 - name: Number
 - scope: constant.numeric
-  settings: {foreground: '#c45a91'}
+  settings: {foreground: '#c44587'}
 - name: Built-in constant
   scope: constant.language
   settings: {foreground: '#AE81FF'}
@@ -37,40 +37,40 @@ settings:
   scope: variable
   settings: {fontStyle: ''}
 - scope: variable.parameter
-  settings: {fontStyle: italic, foreground: '#e3a66d'}
+  settings: {fontStyle: italic, foreground: '#e3974f'}
 - name: Keyword
   scope: keyword
-  settings: {foreground: '#fa6ea1'}
+  settings: {foreground: '#fa5793'}
 - scope: keyword.operator.krpano
   settings: {fontStyle: bold, foreground: '#a69b7c'}
 - scope: keyword.control
-  settings: {foreground: '#deb754'}
+  settings: {foreground: '#deb243'}
 - scope: meta.class, entity.name.class, entity.name.type
-  settings: {foreground: '#87c265'}
+  settings: {foreground: '#72c244'}
 - name: Storage
   scope: storage
-  settings: {fontStyle: '', foreground: '#fa6ea1'}
+  settings: {fontStyle: '', foreground: '#fa5793'}
 - name: Storage type
   scope: storage.type
-  settings: {fontStyle: italic, foreground: '#74a9e3'}
+  settings: {fontStyle: italic, foreground: '#4f97e3'}
 - name: Class name
   scope: entity.name.class
-  settings: {fontStyle: underline, foreground: '#bae368'}
+  settings: {fontStyle: underline, foreground: '#b2e34f'}
 - name: Inherited class
   scope: entity.other.inherited-class
   settings: {fontStyle: bold, foreground: '#e3c068'}
 - name: Function name
   scope: entity.name.function, entity.name.method
-  settings: {fontStyle: '', foreground: '#bae368'}
+  settings: {fontStyle: '', foreground: '#b2e34f'}
 - name: Function argument
   scope: variable.parameter
-  settings: {fontStyle: italic, foreground: '#fcb86a'}
+  settings: {fontStyle: italic, foreground: '#fcb058'}
 - name: Tag name
   scope: entity.name.tag
-  settings: {fontStyle: '', foreground: '#fa6ea1'}
+  settings: {fontStyle: '', foreground: '#fa5793'}
 - name: Tag attribute
   scope: entity.other.attribute-name
-  settings: {fontStyle: '', foreground: '#bae368'}
+  settings: {fontStyle: '', foreground: '#b2e34f'}
 - name: html punctuations tags
   scope: punctuation.definition.tag.end.xml, punctuation.definition.tag.begin.xml
   settings: {foreground: '#f2c200'}
@@ -78,43 +78,43 @@ settings:
   scope: entity.other.attribute-name.localname
   settings: {foreground: '#c0c2c1'}
 - scope: meta.tag.xml entity.name.tag.localname.xml
-  settings: {foreground: '#87c265'}
+  settings: {foreground: '#72c244'}
 - name: Library function
   scope: support.function
-  settings: {foreground: '#9b74c4'}
+  settings: {foreground: '#8c80ff'}
 - name: Library constant
   scope: support.constant
-  settings: {fontStyle: '', foreground: '#74a9e3'}
+  settings: {fontStyle: '', foreground: '#4f97e3'}
 - name: Library class/type
   scope: support.type, support.class, variable.language
-  settings: {fontStyle: '', foreground: '#74a9e3'}
+  settings: {fontStyle: '', foreground: '#4f97e3'}
 - name: Library variable
   scope: support.other.variable
   settings: {fontStyle: ''}
 - name: Invalid
   scope: invalid
-  settings: {background: '#fa6ea1', fontStyle: '', foreground: '#F8F8F0'}
+  settings: {background: '#fa5793', fontStyle: '', foreground: '#F8F8F0'}
 - name: Invalid deprecated
   scope: invalid.deprecated
   settings: {background: '#AE81FF', foreground: '#F8F8F0'}
 - name: JSON property top
   scope: meta.structure.dictionary.json string.quoted.double
-  settings: {foreground: '#bae368'}
+  settings: {foreground: '#b2e34f'}
 - name: JSON property level 2
   scope: meta.structure meta.structure.dictionary.json string.quoted.double
-  settings: {foreground: '#bae368'}
+  settings: {foreground: '#b2e34f'}
 - name: JSON property level 3
   scope: meta.structure meta.structure meta.structure meta.structure.dictionary.json
     string.quoted.double
-  settings: {foreground: '#bae368'}
+  settings: {foreground: '#b2e34f'}
 - name: JSON property level 4
   scope: meta.structure meta.structure meta.structure meta.structure meta.structure
     meta.structure.dictionary.json string.quoted.double
-  settings: {foreground: '#bae368'}
+  settings: {foreground: '#b2e34f'}
 - name: JSON property level 5
   scope: meta.structure meta.structure meta.structure meta.structure meta.structure
     meta.structure meta.structure meta.structure.dictionary.json string.quoted.double
-  settings: {foreground: '#bae368'}
+  settings: {foreground: '#b2e34f'}
 - name: JSON value
   scope: meta.structure.dictionary.value.json string.quoted.double
   settings: {foreground: '#FFFFFF'}
@@ -139,10 +139,10 @@ settings:
   settings: {foreground: '#75715E'}
 - name: diff.deleted
   scope: markup.deleted
-  settings: {foreground: '#fa6ea1'}
+  settings: {foreground: '#fa5793'}
 - name: diff.inserted
   scope: markup.inserted
-  settings: {foreground: '#bae368'}
+  settings: {foreground: '#b2e34f'}
 - name: diff.changed
   scope: markup.changed
   settings: {foreground: '#E6DB74'}
@@ -152,10 +152,10 @@ settings:
   settings: {foreground: '#E6DB74'}
 - name: GitGutter deleted
   scope: markup.deleted.git_gutter
-  settings: {foreground: '#fa6ea1'}
+  settings: {foreground: '#fa5793'}
 - name: GitGutter inserted
   scope: markup.inserted.git_gutter
-  settings: {foreground: '#bae368'}
+  settings: {foreground: '#b2e34f'}
 - name: GitGutter changed
   scope: markup.changed.git_gutter
   settings: {foreground: '#967EFB'}
