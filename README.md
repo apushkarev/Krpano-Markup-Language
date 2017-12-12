@@ -1,5 +1,7 @@
 #Krpano Markup Language (KML)
 
+Latest update: krpano 1.19-pr14
+
 ![Sample Screenshot](/res/syntaxkrpano.png)
 
 Package inclides 
@@ -18,7 +20,7 @@ Package inclides
 
 1. Clone or download this repo to some location;
 2. Find `dist` folder in package and open it's contents;
-3. Open Sublime Text, run Preferences –> Browse Packages...;
+3. Open Sublime Text, run Preferences –> Browse Packages... on Windows or Sublime Text -> Preferences -> Browse Packages on Mac;
 4. Navigate to User folder;
 5. Copy contents of `dist` folder into opened User folder;
 6. Select Preferences - Color Scheme - User and then one of two themes: Monokai Extended or May Thunderstorm.
@@ -28,7 +30,7 @@ Package inclides
 **I.**	Syntax definition is based on [official krpano documentation](http://krpano.com/docu), [plugin](http://krpano.com/plugins/) docs and is intended to recognize all structural entities(e.g. elements, properties or keywords) of KML.
 
 Current list of recognized entities includes:
-* Script perators (`( ) [ ] . , ; == === != !== < > <= >= ! &&(or AND) ||(or 'OR') LT GT LE GE + - / * ^ <<(or LSHT) >>(or RSHT) `). All operators except brackets, dot and comma and semicolon used in code must be separated from operands by spaces;
+* Script perators (`( ) [ ] . , ; == === != !== < > <= >= ! &&(or AND) ||(or 'OR') BAND BOR XOR LT GT LE GE + - / * ^ <<(or LSHT) >>(or RSHT) `). All operators except brackets, dot and comma and semicolon used in code must be separated from operands by spaces;
 * Instruction words (see [Programming logic/Flow control](http://krpano.com/docu/actions/#actionsreference) section of krpano docs);
 * Basic functions (all other pre-defined functions);
 * [Global Variables](http://krpano.com/docu/actions/#globalvarsreference);
