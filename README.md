@@ -1,6 +1,6 @@
 #Krpano Markup Language (KML)
 
-Latest update: krpano 1.19-pr14
+Latest update: krpano 1.19-pr16
 
 ![Sample Screenshot](/res/syntaxkrpano.png)
 
@@ -116,3 +116,6 @@ This simple rule would make your code much easier to read and review. It also is
  
 See [Syntax Definitions](http://docs.sublimetext.info/en/latest/extensibility/syntaxdefs.html) chapter of ST unofficial manual,
 use the same process to modify color scheme.
+
+#Krpano snippets
+
