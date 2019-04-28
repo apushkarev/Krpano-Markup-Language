@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<plugin name="${1}"
+	${2}
+/>
+]]></content >
+  <description>Create plugin tag</description>
+  <tabTrigger>plugin</tabTrigger>
+</snippet >

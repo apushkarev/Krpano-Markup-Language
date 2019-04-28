@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+setinterval(${1}, ${2},
+);
+]]></content >
+  <description>Create setinterval cycle</description>
+  <tabTrigger>setinterval</tabTrigger>
+</snippet >

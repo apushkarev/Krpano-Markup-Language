@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<hotspot name="${1}"
+	${2}
+/>
+]]></content >
+  <description>Create hotspot tag</description>
+  <tabTrigger>hs</tabTrigger>
+</snippet >

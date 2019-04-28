@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+if (${1},
+, , 
+);
+]]></content >
+  <description>Create conditional if else call</description>
+  <tabTrigger>ifce</tabTrigger>
+</snippet >

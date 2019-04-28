@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<action name="${1}" type="javascript"><![CDATA[
+	${2}
+]]${-1}></action>
+]]></content >
+  <description>Create js action</description>
+  <tabTrigger>actjs</tabTrigger>
+</snippet >

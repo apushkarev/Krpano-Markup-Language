@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+ifnot (${1},
+);
+]]></content >
+  <description>Create ifnot call</description>
+  <tabTrigger>ifnot</tabTrigger>
+</snippet >

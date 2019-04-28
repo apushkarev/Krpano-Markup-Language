@@ -9,7 +9,7 @@ Package inclides
 * Color theme "May Thunderstorm" for ST optimized to highlight KML code;
 * Python Script to remove comments from src.
 
-##Contents
+## Contents
 
 * Installation
 * Features
@@ -27,7 +27,7 @@ Package inclides
 
 ## Features ##
 
-**I.**	Syntax definition is based on [official krpano documentation](http://krpano.com/docu), [plugin](http://krpano.com/plugins/) docs and is intended to recognize all structural entities(e.g. elements, properties or keywords) of KML.
+**I.**  Syntax definition is based on [official krpano documentation](http://krpano.com/docu), [plugin](http://krpano.com/plugins/) docs and is intended to recognize all structural entities(e.g. elements, properties or keywords) of KML.
 
 Current list of recognized entities includes:
 * Script perators (`( ) [ ] . , ; == === != !== < > <= >= ! &&(or AND) ||(or 'OR') BAND BOR XOR LT GT LE GE + - / * ^ <<(or LSHT) >>(or RSHT) `). All operators except brackets, dot and comma and semicolon used in code must be separated from operands by spaces;
@@ -47,21 +47,21 @@ Current list of recognized entities includes:
 **1. Single line C-styled comments are not supported niether in actions nor in event handlers. They should be removed from source code before execution.**
 You can put XML-styled comments where it's possible by XML rules.
 
-**II.**	KML has a wide amount of entities so it needs custom color theme to display them all. This package includes two themes:
+**II.** KML has a wide amount of entities so it needs custom color theme to display them all. This package includes two themes:
 
 * May Thunderstorm,  based on [Seti Monokai dark color scheme](https://github.com/jesseweed/seti-ui);
 * Monokai, based on [Sublime Monokai Extended by Jon Schlinkert](https://github.com/jonschlinkert/sublime-monokai-extended)
 
 Both tmemes support all other languages and are optimized to display Krpano syntax nicely.
 
-**III.**	removeComments.py script removes single-line comments from KML source. This operation is required for correct code exec.
+**III.**    removeComments.py script removes single-line comments from KML source. This operation is required for correct code exec.
 
 Requires [python environment](https://www.python.org/downloads/windows/)
 
 At one call comments from one file are removed.
 
 Usage:
-	`python script_dir/remove_comments.py src_dir src_file output_dir1 output_dir2`
+    `python script_dir/remove_comments.py src_dir src_file output_dir1 output_dir2`
 
 ## Code formatting recomendations ##
 
@@ -76,7 +76,7 @@ This syntax highlighting recognizes difference between the two by code formattin
 `attribute="value"` would be recognized as string and highlighted as a string entirely;
 
     attribute="
-	    some_code();
+        some_code();
     "
 
 would be recognized as a piece of script.
@@ -94,16 +94,16 @@ So the only way to divide blocks of code are demonstrative indentations which co
 For example,
 
     if (condition,
-    	actions;
+        actions;
     ,
-    	else actions;
+        else actions;
     );
 
 would be a nice and correct way to format condition statement.
 For loops it might look like
 
     for (set(i, 0), i LT some_array.count, inc(i),
-    	actions;
+        actions;
     );
 
 As one can see comma is playing role of opening curly bracket and closing bracket with semicolon plays role of closing curly bracket.
@@ -117,5 +117,101 @@ This simple rule would make your code much easier to read and review. It also is
 See [Syntax Definitions](http://docs.sublimetext.info/en/latest/extensibility/syntaxdefs.html) chapter of ST unofficial manual,
 use the same process to modify color scheme.
 
-# Krpano snippets
+# Krpano snippets and completions (incomplete)
 
+There is a set of shortcuts to cover majority of writing code cases. Please feel free to troubleshoot;
+
+### Snippets (tags mixed with actions code)
+* action – creates action;
+* actjs – creates JS action with CDATA wrap;
+* asynccall – creates asynchronous call (mode in krpano devlib ;)
+* asyncfor;
+* asyncloop;
+* callwhen;
+* cl – console.log() action (more in krpano devlib);
+* data – data tag with CDATA wrap;
+* delayedcall;
+* events;
+* for;
+* hs – for hotspot tag;
+* hsi – visibility controlled hotspot (more in krpano devlib);
+* hsikt – same with keep set to true;
+* if;
+* ife – if-else operator;
+* ifce – if with conditional else;
+* ifnot;
+* layer;
+* lsi – visibility controlled layer (more in krpano devlib);
+* lsikt – same with keep set to true;
+* krpano;
+* loop;
+* plugin;
+* setinterval;
+* style;
+* tag – for random tag;
+* this – create this alias;
+### Autocompletions with alises
+* fs – fullscreen;
+* stw – stagewidth;
+* sth – stageheight;
+* sts – stagescale;
+* bgc – bgcolor;
+* devd – device.desktop;
+* dtab – device.tablet;
+* dmob – device.mobile;
+* dhand – device.handheld;
+* dcss – device.css3d;
+* dwebgl – device.webgl;
+* dtouch – device.touch;
+* dios – device.ios;
+* diphone – device.iphone;
+* dipod – device.ipod;
+* dipad – device.ipad;
+* dandroid – device.android;
+* dchrome – device.chrome;
+* dchromob – device.chromemobile;
+* dfirefox – device.firefox;
+* die – device.ie;
+* dedge – device.edge;
+* dsafari – device.safari;
+* dopera – device.opera;
+* dwin – device.windows;
+* dmac – device.mac;
+* dlnx – device.linux;;
+* pi – Math.PI;
+* mx – mouse.x;
+* my – mouse.y;
+* msx – mouse.stagex;
+* msy – mouse.stagey;
+* mdx – mouse.downx;
+* mdy – mouse.downy;
+* mcx – mouse.clickx;
+* mcy – mouse.clicky;
+* cp – copy($1, $2);;
+* cht – copy(this, hotspot[$2]);;
+* clt – copy(this, layer[$2]);;
+* ct – copy(this, $2);;
+* cc – copy($1, calc($2));;
+* abs – Math.abs($1);;
+* acos – Math.acos($1);;
+* asin – Math.asin($1);;
+* atan – Math.atan($1);;
+* atan2 – Math.atan2($1);;
+* ceil – Math.ceil($1);;
+* cos – Math.cos($1);;
+* exp – Math.exp($1);;
+* floor – Math.floor($1);;
+* log – Math.log($1);;
+* max – Math.max($1);;
+* min – Math.min($1);;
+* pow – Math.pow($1);;
+* round – Math.round($1);;
+* sin – Math.sin($1);;
+* sqrt – Math.sqrt($1);;
+* tan – Math.tan($1);;
+* cwh – callwith(hotspot[$1], $2);;
+* cwl – callwith(layer[$1], $2);;
+* cw – callwith($1, $2);;
+* ++ – ' + $1 + ' (for string operations in JS).
+
+Majority of other krpano words is also here.

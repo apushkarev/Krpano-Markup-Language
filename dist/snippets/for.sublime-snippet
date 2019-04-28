@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+for(set(${1}, ${2}), ${1} LT ${3}, inc(${1}),
+);
+]]></content >
+  <description>Create for cycle</description>
+  <tabTrigger>for</tabTrigger>
+</snippet >

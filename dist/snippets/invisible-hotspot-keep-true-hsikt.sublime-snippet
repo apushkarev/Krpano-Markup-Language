@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<hotspot name="${1}" style="invisible_content" keep="true"
+	${2}
+/>
+]]></content >
+  <description>Create invisible hotspot keep true tag</description>
+  <tabTrigger>hsikt</tabTrigger>
+</snippet >

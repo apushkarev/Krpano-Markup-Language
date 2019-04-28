@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+<events name="${1}" keep="true"
+/>
+]]></content >
+  <description>Create events tag</description>
+  <tabTrigger>events</tabTrigger>
+</snippet >

@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+asyncloop(${1},
+,
+);
+]]></content >
+  <description>Create asyncloop cycle</description>
+  <tabTrigger>asyncloop</tabTrigger>
+</snippet >

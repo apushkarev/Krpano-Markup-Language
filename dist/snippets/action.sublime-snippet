@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<action name="${1}">
+	${2}
+</action>
+]]></content >
+  <description>Create action tag</description>
+  <tabTrigger>action</tabTrigger>
+</snippet >

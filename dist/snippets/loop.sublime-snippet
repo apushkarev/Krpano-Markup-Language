@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+loop(${1},
+);
+]]></content >
+  <description>Create loop cycle</description>
+  <tabTrigger>loop</tabTrigger>
+</snippet >

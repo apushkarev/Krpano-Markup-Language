@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+callwhen(${1},
+);
+]]></content >
+  <description>Create callwhen cycle</description>
+  <tabTrigger>callwhen</tabTrigger>
+</snippet >

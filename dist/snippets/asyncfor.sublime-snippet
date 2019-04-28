@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+asyncfor(set(${1}, ${2}), ${1} LT count, inc(${1}),
+);
+]]></content >
+  <description>Create asyncfor cycle</description>
+  <tabTrigger>asyncfor</tabTrigger>
+</snippet >

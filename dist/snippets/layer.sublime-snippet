@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<layer name="${1}" keep="true" style="${2}"
+	${3}
+/>
+]]></content >
+  <description>Create layer tag</description>
+  <tabTrigger>layer</tabTrigger>
+</snippet >
