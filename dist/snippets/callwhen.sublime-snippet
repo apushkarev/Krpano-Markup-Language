@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-callwhen(${1},
+callwhen(${1},${1}
 );
 ]]></content >
   <description>Create callwhen cycle</description>

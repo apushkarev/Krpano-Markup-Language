@@ -1,6 +1,9 @@
 <snippet>
   <content><![CDATA[
 <events name="${1}" keep="true"
+	
+	${2}
+
 />
 ]]></content >
   <description>Create events tag</description>

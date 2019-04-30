@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-ifnot (${1},
+ifnot (${1},${2}
 );
 ]]></content >
   <description>Create ifnot call</description>

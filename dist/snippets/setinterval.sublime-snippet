@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-setinterval(${1}, ${2},
+setinterval(${1}, ${2}, ${3}
 );
 ]]></content >
   <description>Create setinterval cycle</description>

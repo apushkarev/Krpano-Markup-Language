@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-loop(${1},
+loop(${1},${2}
 );
 ]]></content >
   <description>Create loop cycle</description>

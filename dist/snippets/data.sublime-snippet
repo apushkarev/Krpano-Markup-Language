@@ -1,6 +1,9 @@
 <snippet>
   <content><![CDATA[
 <data name="${1}"><![CDATA[
+
+	${2}
+
 ]]${-1}></data>
 ]]></content >
   <description>Create data tag</description>

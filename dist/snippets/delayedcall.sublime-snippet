@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-delayedcall (_${1}_, 0.1,
+delayedcall (_${1}_, 0.1,${2}
 );
 ]]></content >
   <description>Create delayedcall</description>

@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-asynccall(${1},
+asynccall(${1}, ${2}
 );
 ]]></content >
   <description>Create asynccall</description>

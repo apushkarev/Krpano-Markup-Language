@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-asyncloop(${1},
+asyncloop(${1},${2}
 ,
 );
 ]]></content >
