@@ -1,0 +1,5 @@
+<snippet>
+  <content><![CDATA[' + $1 + ']]></content >
+  <description>Create style tag</description>
+  <tabTrigger>++</tabTrigger>
+</snippet >

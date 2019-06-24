@@ -1,6 +1,4 @@
 {
-	"scope": "source.xml",
-
 	"completions":
 	[
 		{ "trigger": "version", "contents": "version" },
@@ -18,9 +16,6 @@
 
 		{ "trigger": "sts", "contents": "stagescale" },
 		{ "trigger": "stagescale", "contents": "stagescale" },
-
-		{ "trigger": "bgc", "contents": "bgcolor" },
-		{ "trigger": "bgcolor", "contents": "bgcolor" },
 
 		{ "trigger": "browser.useragent", "contents": "browser.useragent" },
 		{ "trigger": "browser.platform", "contents": "browser.platform" },
@@ -495,6 +490,7 @@
 		{ "trigger": "enabled", "contents": "enabled" },
 		{ "trigger": "handcursor", "contents": "handcursor" },
 		{ "trigger": "maskchildren", "contents": "maskchildren" },
+		{ "trigger": "mct", "contents": "maskchildren=\"true\"" },
 		{ "trigger": "scalechildren", "contents": "scalechildren" },
 		{ "trigger": "zorder", "contents": "zorder" },
 		{ "trigger": "capture", "contents": "capture" },
@@ -507,11 +503,16 @@
 		{ "trigger": "safearea", "contents": "safearea" },
 		{ "trigger": "x", "contents": "x" },
 		{ "trigger": "y", "contents": "y" },
+		{ "trigger": "xy", "contents": "x=\"$1\" y=\"$2\"" },
+		{ "trigger": "oxy", "contents": "ox=\"$1\" oy=\"$2\"" },
 		{ "trigger": "ox", "contents": "ox" },
 		{ "trigger": "oy", "contents": "oy" },
 		{ "trigger": "rotate", "contents": "rotate" },
-		{ "trigger": "width", "contents": "width" },
-		{ "trigger": "height", "contents": "height" },
+		{ "trigger": "w", "contents": "width=\"$1\" " },
+		{ "trigger": "pw", "contents": "pixelwidth" },
+		{ "trigger": "h", "contents": "height=\"$1\" " },
+		{ "trigger": "ph", "contents": "pixelheight" },
+		{ "trigger": "wh", "contents": "width=\"$1\" height=\"$2\"" },
 		{ "trigger": "scale", "contents": "scale" },
 		{ "trigger": "pixelhittest", "contents": "pixelhittest" },
 		{ "trigger": "smoothing", "contents": "smoothing" },
@@ -525,6 +526,7 @@
 		{ "trigger": "ondowncrop", "contents": "ondowncrop" },
 		{ "trigger": "mask", "contents": "mask" },
 		{ "trigger": "effect", "contents": "effect" },
+		{ "trigger": "bgf", "contents": "bg=\"false\"" },
 		{ "trigger": "bgcolor", "contents": "bgcolor" },
 		{ "trigger": "bgalpha", "contents": "bgalpha" },
 		{ "trigger": "bgborder", "contents": "bgborder" },
@@ -614,15 +616,17 @@
 		{ "trigger": "blind", "contents": "blind" },
 		{ "trigger": "blindcurve", "contents": "blindcurve" },
 
-		{ "trigger": "html", "contents": "blindcurve" },
-		{ "trigger": "css", "contents": "blindcurve" },
-		{ "trigger": "vcenter", "contents": "blindcurve" },
-		{ "trigger": "padding", "contents": "blindcurve" },
-		{ "trigger": "wordwrap", "contents": "blindcurve" },
-		{ "trigger": "mergedalpha", "contents": "blindcurve" },
-		{ "trigger": "interactivecontent", "contents": "blindcurve" },
-		{ "trigger": "onautosized", "contents": "blindcurve" },
-		{ "trigger": "oversampling", "contents": "blindcurve" },
+		{ "trigger": "html", "contents": "html" },
+		{ "trigger": "css", "contents": "css" },
+		{ "trigger": "vcenter", "contents": "vcenter" },
+		{ "trigger": "padding", "contents": "padding" },
+		{ "trigger": "wordwrap", "contents": "wordwrap" },
+		{ "trigger": "mergedalpha", "contents": "mergedalpha" },
+		{ "trigger": "interactivecontent", "contents": "interactivecontent" },
+		{ "trigger": "ict", "contents": "interactivecontent=\"true\"" },
+		{ "trigger": "onautosized", "contents": "onautosized" },
+		{ "trigger": "oversampling", "contents": "oversampling" },
+		{ "trigger": "ovs", "contents": "oversampling=\"2\" " },
 
 		{ "trigger": "videourl", "contents": "videourl" },
 		{ "trigger": "posterurl", "contents": "posterurl" },
@@ -715,6 +719,7 @@
 		{ "trigger": "al", "contents": "align=\"left\"" },
 		{ "trigger": "alt", "contents": "align=\"lefttop\"" },
 		{ "trigger": "atl", "contents": "align=\"lefttop\"" },
+		{ "trigger": "ac", "contents": "align=\"center\"" },
 
 		{ "trigger": "et", "contents": "edge=\"top\"" },
 		{ "trigger": "etr", "contents": "edge=\"righttop\"" },
@@ -728,6 +733,7 @@
 		{ "trigger": "el", "contents": "edge=\"left\"" },
 		{ "trigger": "elt", "contents": "edge=\"lefttop\"" },
 		{ "trigger": "etl", "contents": "edge=\"lefttop\"" },
+		{ "trigger": "ec", "contents": "edge=\"center\"" },
 
 		{ "trigger": "kt", "contents": "keep=\"true\"" },
 		{ "trigger": "kf", "contents": "keep=\"false\"" },
@@ -735,13 +741,13 @@
 		{ "trigger": "w100", "contents": "width=\"100%\"" },
 		{ "trigger": "h100", "contents": "height=\"100%\"" },
 
-		{ "trigger": "bgc", "contents": "bgcolor=\"0x$1\"" },
-		{ "trigger": "bga", "contents": "bgalpha=\"$1\"" },
-		{ "trigger": "bgb", "contents": "bgborder=\"$1\"" },
-		{ "trigger": "bgr", "contents": "bgroundedge=\"$1\"" },
-		{ "trigger": "bgs", "contents": "bgshadow=\"$1\"" },
-		{ "trigger": "txs", "contents": "textshadow=\"$1\"" },
-		{ "trigger": "bgc", "contents": "bgcapture=\"$1\"" },
+		{ "trigger": "bgc", "contents": "bgcolor=\"0x$1\" " },
+		{ "trigger": "bga", "contents": "bgalpha=\"$1\" " },
+		{ "trigger": "bgb", "contents": "bgborder=\"$1\" " },
+		{ "trigger": "bgr", "contents": "bgroundedge=\"$1\" " },
+		{ "trigger": "bgs", "contents": "bgshadow=\"$1\" " },
+		{ "trigger": "txs", "contents": "txtshadow=\"$1\" " },
+		{ "trigger": "bgcp", "contents": "bgcapture=\"$1\" " },
 
 		{ "trigger": "ov", "contents": "onover=\"\n\t$1\n\"" },
 		{ "trigger": "od", "contents": "ondown=\"\n\t$1\n\"" },
@@ -757,8 +763,12 @@
 		{ "trigger": "ovc", "contents": "onvideocomplete=\"\n\t$1\n\"" },
 		{ "trigger": "ont", "contents": "onneedtouch=\"\n\t$1\n\"" },
 		{ "trigger": "ong", "contents": "ongottouch=\"\n\t$1\n\"" },
-		{ "trigger": "oe", "contents": "onerror=\"\n\t$1\n\"" },
+		{ "trigger": "oerr", "contents": "onerror=\"\n\t$1\n\"" },
 		{ "trigger": "os", "contents": "onscroll=\"\n\t$1\n\"" },
+		{ "trigger": "oav", "contents": "onavailable=\"\n\t$1\n\"" },
+		{ "trigger": "oua", "contents": "onunavailable=\"\n\t$1\n\"" },
+		{ "trigger": "oe", "contents": "onenable=\"\n\t$1\n\"" },
+		{ "trigger": "odis", "contents": "ondisable=\"\n\t$1\n\"" },
 
 		{ "trigger": "oexfs", "contents": "onexitfullscreen=\"\n\t$1\n\"" },
 		{ "trigger": "oxc", "contents": "onxmlcomplete=\"\n\t$1\n\"" },
@@ -802,8 +812,20 @@
 		{ "trigger": "oocrop", "contents": "onovercrop=\"$1|$2|$3|$4\"" },
 		{ "trigger": "odcrop", "contents": "ondowncrop=\"$1|$2|$3|$4\"" },
 
-		{ "trigger": "sic", "contents": "style=\"invisible_content\"" },
+		{ "trigger": "hc", "contents": "hotspot.count" },
+		{ "trigger": "lc", "contents": "hotspot.count" },
+		{ "trigger": "arri", "contents": "$1[get(i)].$2" },
 
-		{ "trigger": "++", "contents": "' + $1 + '" }
+		{ "trigger": "ic", "contents": "invisible_content" },
+		{ "trigger": "sic", "contents": "style=\"invisible_content\"" },
+		{ "trigger": "sicv", "contents": "style=\"invisible_content|visible\"" },
+		{ "trigger": "kc", "contents": "krpano.call('$1');" },
+		{ "trigger": "ks", "contents": "krpano.set('$1');" },
+		{ "trigger": "kg", "contents": "krpano.get('$1');" },
+
+		{ "trigger": "cl", "contents": "console.log($1);" },
+		{ "trigger": "cd", "contents": "console.divider();" }
+
+		// { "trigger": "++", "contents": "' + $1 + '" }
 	]
 }

@@ -222,6 +222,7 @@ There is a set of shortcuts to cover majority of writing code cases. Please feel
 * tc – type="container";
 * hct – handcursor="true";
 * hcf – handcursor="false";
+* ac – align="center";
 * at – align="top";
 * atr – align="righttop";
 * art – align="righttop";
@@ -237,6 +238,7 @@ There is a set of shortcuts to cover majority of writing code cases. Please feel
 * et – edge="top";
 * etr – edge="righttop";
 * ert – edge="righttop";
+* ec – edge="center";
 * er – edge="right";
 * erb – edge="rightbottom";
 * ebr – edge="rightbottom";
@@ -253,6 +255,7 @@ There is a set of shortcuts to cover majority of writing code cases. Please feel
 * bgc – bgcolor="0x$1";
 * bga – bgalpha="$1";
 * bgb – bgborder="$1";
+* bgf – bg="false";
 * bgr – bgroundedge="$1";
 * bgs – bgshadow="$1";
 * txs – textshadow="$1";
@@ -313,5 +316,24 @@ There is a set of shortcuts to cover majority of writing code cases. Please feel
 * oocrop – onovercrop="$1|$2|$3|$4";
 * odcrop – ondowncrop="$1|$2|$3|$4";
 * sic – style="invisible_content";
+* sicv – style="invisible_content|visible";
+* ic – invisible_content;
+* xy – x="$1" y="$2";
+* oxy – ox="$1" oy="$2";
+* wh – width="$1" height="$2";
+* w – width="$1";
+* h – height="$1";
+* pw – pixelwidth="$1";
+* ph – pixelheight="$1";
+* mct – maskchildren="true";
+* hc – hotspot.count;
+* lc - layer.count;
+* arri – $1[get(i)].$2;
+* kc – krpano.call('$1');
+* ks – krpano.set('$1');
+* kg – krpano.get('$1');
+* cl – console.log($1);
+* cd – console.divider();
+
 
 Majority of other krpano words is also here.

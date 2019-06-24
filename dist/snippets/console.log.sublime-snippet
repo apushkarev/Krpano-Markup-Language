@@ -1,7 +1,0 @@
-<snippet>
-  <content><![CDATA[
-console.log(${1});
-]]></content >
-  <description>Create hotspot to this</description>
-  <tabTrigger>cl</tabTrigger>
-</snippet >
