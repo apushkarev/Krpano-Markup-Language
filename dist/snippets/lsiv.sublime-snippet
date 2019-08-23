@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<layer name="${1}" style="invisible_content|visible"
+	${2}
+/>
+]]></content >
+  <description>Create invisible layer tag</description>
+  <tabTrigger>lsiv</tabTrigger>
+</snippet >

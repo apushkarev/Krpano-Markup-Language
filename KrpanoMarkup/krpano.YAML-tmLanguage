@@ -122,7 +122,7 @@ repository:
 
 # Instruction words
   krpanoInstructionWords:
-    match: \s?\b(set|get|copy|delete|if|ifnot|resolvecondition|(stop)?delayedcall|for|asyncfor|loop|async(loop|call){1}|switch|push|pop|stopall|breakall|callwith|events\.dispatch|calc|def|nexttick|callwhen|exitcall|(set|clear)interval|toggle|break|assignstyle|this|scope|parentscopeset|copyattributes|strict|caller|(stop)?callwhen)\b
+    match: \s?\b(set|get|copy|delete|if|ifnot|resolvecondition|(stop)?delayedcall|for|asyncfor|loop|async(loop|call){1}|switch|push|pop|stopall|breakall|callwith|events\.dispatch|calc|def|nexttick|callwhen|exitcall|(set|clear)interval|toggle|break|assignstyle|new|this|scope|parentscopeset|copyattributes|strict|caller|(stop)?callwhen|sortby|createarrayitem|removearrayitem)\b
     name: keyword.control
 
 # Global variables

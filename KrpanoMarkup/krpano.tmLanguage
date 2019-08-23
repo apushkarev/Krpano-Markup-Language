@@ -265,7 +265,7 @@
 		<key>krpanoInstructionWords</key>
 		<dict>
 			<key>match</key>
-			<string>\s?\b(set|get|copy|delete|if|ifnot|resolvecondition|(stop)?delayedcall|for|asyncfor|loop|async(loop|call){1}|switch|push|pop|stopall|breakall|callwith|events\.dispatch|calc|def|nexttick|callwhen|exitcall|(set|clear)interval|toggle|break|assignstyle|this|scope|parentscopeset|copyattributes|strict|caller|(stop)?callwhen)\b</string>
+			<string>\s?\b(set|get|copy|delete|if|ifnot|resolvecondition|(stop)?delayedcall|for|asyncfor|loop|async(loop|call){1}|switch|push|pop|stopall|breakall|callwith|events\.dispatch|calc|def|nexttick|callwhen|exitcall|(set|clear)interval|toggle|break|assignstyle|new|this|scope|parentscopeset|copyattributes|strict|caller|(stop)?callwhen|sortby|createarrayitem|removearrayitem)\b</string>
 			<key>name</key>
 			<string>keyword.control</string>
 		</dict>

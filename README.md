@@ -121,7 +121,7 @@ use the same process to modify color scheme.
 
 There is a set of shortcuts to cover majority of writing code cases. Please feel free to troubleshoot;
 
-### Snippets (tags mixed with actions code)
+### Snippets and autocompletions
 * action – creates action;
 * actjs – creates JS action with CDATA wrap;
 * asynccall – creates asynchronous call (mode in krpano devlib ;)
@@ -150,7 +150,6 @@ There is a set of shortcuts to cover majority of writing code cases. Please feel
 * style;
 * tag – for random tag;
 * this – create this alias;
-### Script autocompletions with alises
 * fs – fullscreen;
 * stw – stagewidth;
 * sth – stageheight;
@@ -212,8 +211,9 @@ There is a set of shortcuts to cover majority of writing code cases. Please feel
 * cwh – callwith(hotspot[$1], $2);
 * cwl – callwith(layer[$1], $2);
 * cw – callwith($1, $2);
+* cwt – callwith(this, $2);
 * ++ – ' + $1 + ' (for string operations in JS);
-### XML autocompletions with alises
+* pp – "+ ' ' + "
 * ef – enabled="false";
 * et – enabled="true";
 * vf – visible="false";
@@ -252,6 +252,8 @@ There is a set of shortcuts to cover majority of writing code cases. Please feel
 * kf – keep="false";
 * w100 – width="100%";
 * h100 – height="100%";
+* wh – width=\"$1\" height=\"$2\"
+* whm – width.mobile=\"$1\" height.mobile=\"$2\"
 * bgc – bgcolor="0x$1";
 * bga – bgalpha="$1";
 * bgb – bgborder="$1";
@@ -262,9 +264,13 @@ There is a set of shortcuts to cover majority of writing code cases. Please feel
 * bgc – bgcapture="$1";
 * ov – onover="\n\t$1\n";
 * od – ondown="\n\t$1\n";
+* odt – ondown.touch="\n\t$1\n";
 * oh – onhover="\n\t$1\n";
 * oo – onout="\n\t$1\n";
 * oc – onclick="\n\t$1\n";
+* oct – onclick.touch="\n\t$1\n";
+* oc1 – onclick=\"\n\tdelayedcall(0.1,\n\t\tonclick_actions();\n\t);\n\"
+* oct1 – onclick.touch=\"\n\tdelayedcall(0.1,\n\t\tonclick_actions();\n\t);\n\"
 * ou – onup="\n\t$1\n";
 * ol – onloaded="\n\t$1\n";
 * oa – onautosized="\n\t$1\n";
@@ -334,6 +340,13 @@ There is a set of shortcuts to cover majority of writing code cases. Please feel
 * kg – krpano.get('$1');
 * cl – console.log($1);
 * cd – console.divider();
+* cm – console.msg('$1');
+* cv – console.var($1);
+* sdc – stopdelayedcall($1);
+* jsget – jsget($1, $2);
+* new – new($1);
+* nh – newhotspot(%1, %2);
+* nl – newlayer(%1, %2);
 
 
 Majority of other krpano words is also here.
