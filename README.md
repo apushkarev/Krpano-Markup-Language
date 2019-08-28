@@ -54,15 +54,6 @@ You can put XML-styled comments where it's possible by XML rules.
 
 Both tmemes support all other languages and are optimized to display Krpano syntax nicely.
 
-**III.**    removeComments.py script removes single-line comments from KML source. This operation is required for correct code exec.
-
-Requires [python environment](https://www.python.org/downloads/windows/)
-
-At one call comments from one file are removed.
-
-Usage:
-    `python script_dir/remove_comments.py src_dir src_file output_dir1 output_dir2`
-
 ## Code formatting recomendations ##
 
 ### String recognition.
