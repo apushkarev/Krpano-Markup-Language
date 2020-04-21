@@ -113,7 +113,13 @@ use the same process to modify color scheme.
 Krpano uses two different comment styles taken from JS and XML. Only one JS comment style is fully supported inside krpano actions: /* *\/
 For XML part of code one can use ordinary XML comments.
 
-Default comment style that user can set with Cmd/Ctrl + / shortcut is JS one. To create XML comment use **xmlc** snippet.
+Default comment style that user can set with Cmd/Ctrl + / shortcut is JS one. To create XML comment use **xmlc** snippe OR make a keyboar shortvut for xml comment style snippet:
+
+        {
+            "keys": ["shift+super+forward_slash"],
+            "command": "insert_snippet", 
+            "args": { "name": "Packages/User/KrpanoMarkup/snippets/xml-comment.sublime-snippet" }
+        }
 
 # Krpano snippets and completions
 
