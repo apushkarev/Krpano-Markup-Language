@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+onnewscene="
+	if(${1},
+		set(${1}, false);
+
+		delayedcall(0.25, 
+			set(${1}, true);
+		);
+
+		${2}
+	);
+"
+]]></content >
+  <description>Onnewscene run once</description>
+  <tabTrigger>onsro</tabTrigger>
+</snippet >

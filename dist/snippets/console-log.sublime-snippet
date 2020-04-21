@@ -1,0 +1,4 @@
+<snippet>
+  <content><![CDATA[console.log($SELECTION);]]></content >
+  <description>Call console.log from key binding</description>
+</snippet >

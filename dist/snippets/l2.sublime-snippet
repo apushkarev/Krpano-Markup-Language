@@ -1,0 +1,5 @@
+<snippet>
+  <content><![CDATA[<layer name="${1}" style="${1}"/>]]></content >
+  <description>Create layer tag (OOP)</description>
+  <tabTrigger>l2</tabTrigger>
+</snippet >

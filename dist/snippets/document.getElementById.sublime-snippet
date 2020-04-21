@@ -1,0 +1,4 @@
+<snippet>
+  <content><![CDATA[document.getElementById($SELECTION);]]></content >
+  <description>Call from key binding</description>
+</snippet >

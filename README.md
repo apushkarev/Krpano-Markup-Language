@@ -108,7 +108,14 @@ This simple rule would make your code much easier to read and review. It also is
 See [Syntax Definitions](http://docs.sublimetext.info/en/latest/extensibility/syntaxdefs.html) chapter of ST unofficial manual,
 use the same process to modify color scheme.
 
-# Krpano snippets and completions (incomplete)
+# Comments
+
+Krpano uses two different comment styles taken from JS and XML. Only one JS comment style is fully supported inside krpano actions: /* *\/
+For XML part of code one can use ordinary XML comments.
+
+Default comment style that user can set with Cmd/Ctrl + / shortcut is JS one. To create XML comment use **xmlc** snippet.
+
+# Krpano snippets and completions
 
 There is a set of shortcuts to cover majority of writing code cases. Please feel free to troubleshoot;
 
@@ -338,6 +345,18 @@ There is a set of shortcuts to cover majority of writing code cases. Please feel
 * new – new($1);
 * nh – newhotspot(%1, %2);
 * nl – newlayer(%1, %2);
+* xs – xml.scene;
+* gdc – get:data[$1].content (useful for getting image from sata tag with base64 image code);
+* xmlc – add XML styled comment brackets <!-- -->;
+* aos – autorun="onstart";
+* jscl – js( console.log(calc($1)); );
+* jscm – js( console.log('$1'); );
+* console.log and console.msg snippets for key binding:
+
+        { "keys": ["shift+super+x"], 
+          "command": "insert_snippet", 
+          "args": { "name": "Packages/User/KrpanoMarkup/snippets/console-log.sublime-snippet" }
+        },
 
 
 Majority of other krpano words is also here.
