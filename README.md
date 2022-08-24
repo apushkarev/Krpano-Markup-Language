@@ -194,6 +194,8 @@ There is a set of shortcuts to cover majority of writing code cases. Please feel
 * cht – copy(this, hotspot[$2]);
 * clt – copy(this, layer[$2]);
 * ct – copy(this, $2);
+* calc – calc($1, $2);
+* calcin – calc($1)
 * cc – copy($1, calc($2));
 * abs – Math.abs($1);
 * acos – Math.acos($1);

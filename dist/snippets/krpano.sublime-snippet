@@ -1,10 +1,11 @@
 <snippet>
   <content><![CDATA[
 <krpano>
-	
-	${0}
-	
+  
+  ${0}
+  
 </krpano>
+
 ]]></content >
   <description>Create krpano tag</description>
   <tabTrigger>krpano</tabTrigger>

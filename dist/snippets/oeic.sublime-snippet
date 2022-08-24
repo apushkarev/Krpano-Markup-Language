@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<object name="${1}" extends="InvisibleContent"
+	${2}
+/>
+]]></content >
+  <description>Create style tag</description>
+  <tabTrigger>oeic</tabTrigger>
+</snippet >

@@ -1,0 +1,5 @@
+<snippet>
+  <content><![CDATA[<hotspot name="${1}" object="${1}"/>]]></content >
+  <description>Create layer tag (OOP)</description>
+  <tabTrigger>hs2</tabTrigger>
+</snippet >

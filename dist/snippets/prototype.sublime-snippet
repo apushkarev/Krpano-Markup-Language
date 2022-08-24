@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<prototype name="${1}"
+	${2}
+/>
+]]></content >
+  <description>Create style tag</description>
+  <tabTrigger>prototype</tabTrigger>
+</snippet >

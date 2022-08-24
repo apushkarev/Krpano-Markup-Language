@@ -227,7 +227,7 @@
 		{ "trigger": "dec", "contents": "dec($1);" },
 		{ "trigger": "clamp", "contents": "clamp($1, $2, $3);" },
 		{ "trigger": "calcin", "contents": "calc($1)" },
-		{ "trigger": "calcout", "contents": "calc($1, $2);" },
+		{ "trigger": "calc", "contents": "calc($1, $2);" },
 
 		{ "trigger": "abs", "contents": "Math.abs($1);" },
 		{ "trigger": "Math.abs", "contents": "Math.abs($1);" },
@@ -281,8 +281,8 @@
 		{ "trigger": "Math.tan", "contents": "Math.tan($1);" },
 
 
-		{ "trigger": "cwh", "contents": "callwith(hotspot[get($1)], $2);" },
-		{ "trigger": "cwl", "contents": "callwith(layer[get($1)], $2);" },
+		{ "trigger": "cwh", "contents": "callwith(hotspot[$1], $2);" },
+		{ "trigger": "cwl", "contents": "callwith(layer[$1], $2);" },
 		{ "trigger": "cwt", "contents": "callwith(this, $2);" },
 
 		{ "trigger": "cw", "contents": "callwith($1, $2);" },
@@ -755,7 +755,8 @@
 		{ "trigger": "oo", "contents": "onout=\"\n\t$1\n\"" },
 		{ "trigger": "oc", "contents": "onclick=\"\n\t$1\n\"" },
 		{ "trigger": "oct", "contents": "onclick.touch=\"\n\t$1\n\"" },
-		{ "trigger": "oc1", "contents": "onclick=\"\n\tdelayedcall(0.1,\n\t\tonclick_actions();\n\t);\n\"\nonclick_actions=\"\n\t$1\n\"" },
+		{ "trigger": "oc1", "contents": "onclick=\"\n\tdelayedcall (0.1,\n\t\tonclick_actions();\n\t);\n\"\nonclick_actions=\"\n\t$1\n\"" },
+		{ "trigger": "oc2", "contents": "onclick=\"\n\tdelayedcall (get(uiReactionDelay),\n\t\tonclickActions();\n\t);\n\"\nonclickActions=\"\n\t$1\n\"" },
 		{ "trigger": "oct1", "contents": "onclick.touch=\"\n\tdelayedcall(0.1,\n\t\tonclick_actions();\n\t);\n\"" },
 		{ "trigger": "ou", "contents": "onup=\"\n\t$1\n\"" },
 		{ "trigger": "out", "contents": "onup.touch=\"\n\t$1\n\"" },
@@ -820,15 +821,17 @@
 		{ "trigger": "lc", "contents": "hotspot.count" },
 		{ "trigger": "arri", "contents": "$1[get(i)].$2" },
 
-		{ "trigger": "ic", "contents": "invisible_content" },
-		{ "trigger": "sic", "contents": "style=\"invisible_content\"" },
-		{ "trigger": "sicv", "contents": "style=\"invisible_content|visible\"" },
+		{ "trigger": "ic", "contents": "InvisibleContent" },
+		{ "trigger": "sic", "contents": "style=\"InvisibleContent\"" },
+		{ "trigger": "sicv", "contents": "style=\"InvisibleContent|Visible\"" },
+		{ "trigger": "eic", "contents": "extends=\"InvisibleContent\"" },
+		{ "trigger": "eicv", "contents": "extends=\"InvisibleContent|Visible\"" },
 
 		{ "trigger": "kc", "contents": "krpano.call(`$1`);" },
 		{ "trigger": "ks", "contents": "krpano.set(`$1`);" },
 		{ "trigger": "kg", "contents": "krpano.get(`$1`);" },
 
-		{ "trigger": "oca", "contents": "onclick_actions" },
+		{ "trigger": "oca", "contents": "onclickActions" },
 
 		{ "trigger": "cl", "contents": "console.log($1);" },
 		{ "trigger": "cv", "contents": "console.var($1);" },
@@ -841,7 +844,7 @@
 		{ "trigger": "pp", "contents": "+ ' ' + " },
 		{ "trigger": "gdc", "contents": "get:data[$1].content" },
 
-		{ "trigger": "new", "contents": "new($1);" },
+		{ "trigger": "new", "contents": "new($1,\n\t$2\n);" },
 
 		{ "trigger": "nh", "contents": "newhotspot(%1, %2);" },
 		{ "trigger": "nl", "contents": "newlayer(%1, %2);" },
@@ -849,6 +852,11 @@
 		{ "trigger": "jscl", "contents": "js( console.log(calc($1)); );" },
 		{ "trigger": "jscm", "contents": "js( console.log('$1'); );" },
 		{ "trigger": "aos", "contents": "autorun=\"onstart\"" },
+
+		{ "trigger": "kli", "contents": "krpano.layer.getItem($1)" },
+		{ "trigger": "kla", "contents": "krpano.layer.getArray()" },
+		{ "trigger": "khi", "contents": "krpano.hotspot.getItem($1)" },
+		{ "trigger": "kha", "contents": "krpano.hotspot.getArray()" },
 
 		{ "trigger": "xmlc", "contents": "<!-- $1 -->" }
 	]
