@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+window.${1} = () => {
+  ${2}
+};
+]]></content >
+  <description>Create js function inside krpano action js</description>
+  <tabTrigger>wf</tabTrigger>
+</snippet >

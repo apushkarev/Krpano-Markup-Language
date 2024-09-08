@@ -1,7 +1,9 @@
 <snippet>
   <content><![CDATA[
-<action name="${1}" type="javascript" autorun="preinit"><![CDATA[
-	${2}
+<action name="" type="javascript" autorun="preinit"><![CDATA[
+
+	${1}
+  
 ]]${-1}></action>
 ]]></content >
   <description>Create js action</description>

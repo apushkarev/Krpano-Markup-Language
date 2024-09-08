@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+<${1} >${2}</${1}>
+]]></content >
+  <description>Create wrapper tag</description>
+  <tabTrigger>tag2</tabTrigger>
+</snippet >

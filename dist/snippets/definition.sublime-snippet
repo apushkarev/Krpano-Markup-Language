@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<definition name="${1}" extends=""
+	${2}
+/>
+]]></content >
+  <description>Create style tag</description>
+  <tabTrigger>definition</tabTrigger>
+</snippet >
