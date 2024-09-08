@@ -755,7 +755,7 @@
 		{ "trigger": "oo", "contents": "onout=\"\n\t$1\n\"" },
 		{ "trigger": "oc", "contents": "onclick=\"\n\t$1\n\"" },
 		{ "trigger": "oct", "contents": "onclick.touch=\"\n\t$1\n\"" },
-		{ "trigger": "oc1", "contents": "onclick=\"\n\tdelayedcall (0.1,\n\t\tonclick_actions();\n\t);\n\"\nonclick_actions=\"\n\t$1\n\"" },
+		{ "trigger": "oc1", "contents": "onclick=\"\n\tdelayedcall (0.075,\n\t\tonclick_actions();\n\t);\n\"\nonclick_actions=\"\n\t$1\n\"" },
 		{ "trigger": "oc2", "contents": "onclick=\"\n\tdelayedcall (get(uiReactionDelay),\n\t\tonclickActions();\n\t);\n\"\nonclickActions=\"\n\t$1\n\"" },
 		{ "trigger": "oct1", "contents": "onclick.touch=\"\n\tdelayedcall(0.1,\n\t\tonclick_actions();\n\t);\n\"" },
 		{ "trigger": "ou", "contents": "onup=\"\n\t$1\n\"" },
@@ -821,15 +821,29 @@
 		{ "trigger": "lc", "contents": "hotspot.count" },
 		{ "trigger": "arri", "contents": "$1[get(i)].$2" },
 
-		{ "trigger": "ic", "contents": "InvisibleContent" },
-		{ "trigger": "sic", "contents": "style=\"InvisibleContent\"" },
-		{ "trigger": "sicv", "contents": "style=\"InvisibleContent|Visible\"" },
-		{ "trigger": "eic", "contents": "extends=\"InvisibleContent\"" },
-		{ "trigger": "eicv", "contents": "extends=\"InvisibleContent|Visible\"" },
+		{ "trigger": "ic", "contents": "Invisible_Content" },
+		{ "trigger": "sic", "contents": "style=\"Invisible_Content\"" },
+		{ "trigger": "sicv", "contents": "style=\"Invisible_Content|Visible\"" },
+		{ "trigger": "eic", "contents": "extends=\"Invisible_Content\"" },
+		{ "trigger": "eicv", "contents": "extends=\"Invisible_Content|Visible\"" },
+
+		{ "trigger": "ic2", "contents": "Invisible_Content" },
+		{ "trigger": "sic2", "contents": "style=\"Invisible_Content\"" },
+		{ "trigger": "sicv2", "contents": "style=\"Invisible_Content|Visible\"" },
+		{ "trigger": "eic2", "contents": "extends=\"Invisible_Content\"" },
+		{ "trigger": "eicv2", "contents": "extends=\"Invisible_Content|Visible\"" },
 
 		{ "trigger": "kc", "contents": "krpano.call(`$1`);" },
 		{ "trigger": "ks", "contents": "krpano.set(`$1`);" },
 		{ "trigger": "kg", "contents": "krpano.get(`$1`);" },
+
+		{ "trigger": "ksgi", "contents": "krpano.scene.getItem(`$1`);" },
+		{ "trigger": "kg", "contents": "krpano.get(`$1`);" },
+		{ "trigger": "kxs", "contents": "krpano.xml.scene" },
+		{ "trigger": "ksxs", "contents": "krpano.scene.getItem(krpano.xml.scene);" },
+		{ "trigger": "kc", "contents": "krpano.call(`$1`);" },
+		{ "trigger": "kcwl", "contents": "krpano.call(`callwith(layer[${$1}], `${${2}})`);" },
+		{ "trigger": "kcwh", "contents": "krpano.call(`callwith(hotspot[${$1}], `${${2}})`);" },
 
 		{ "trigger": "oca", "contents": "onclickActions" },
 
